@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIPKART</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .h {
+            background-color: azure;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            padding: 150px;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .product-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .btn1{
+            background-color: violet;
+        }
+
+        .btn1:hover {
+            background: violet;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header class="h">
+            <div>
+                <img src="flipkrt_logo.jpg" alt="FLIPKART" style="max-width: 45px;">
+                <input type="text" placeholder="Search for products here" />
+                <button class="btn" type="submit" title="Search for products">SEARCH</button>
+                <button class="btn1" title="Cart">🛒</button>
+            </div> 
+        </header> 
+
+        <div class="product">
+            <div class="product-item">
+                <img src="clothes_logo.jpg" alt="Fashion">
+                <h3>Fashion</h3>
+                <a href="buy_fashion.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="electronics_logo.jpg" alt="Electronics">
+                <h3>Electronics</h3>
+                <a href="buy_electronics.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="furniture_logo.jpg" alt="Furniture">
+                <h3>Furniture</h3>
+                <a href="buy_furniture.html" class="btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="beauty_logo.jpg" alt="Beauty, Toys and More">
+                <h3>Beauty, Toys and More</h3>
+                <a href="buy_beauty.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>About | Help | Consumer Policy | &copy;2007-2025 Flipkart.com</p>
+        </div>
+    </div>    
+</body>
+</html>
